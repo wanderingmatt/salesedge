@@ -1,0 +1,10 @@
+/* 
+FILENAME: base.css
+TITLE: Base stylesheet for SalesEdge
+AUTHOR: Matthew Anderson > matthew.anderson.design@gmail.com
+LAST MODIFIED DATE: 01.05.2008
+LAST MODIFIED BY: ma
+*/
+
+@import url(reset.css); /* Reset stylesheet for all projects */
+@import url(screen.css); /* Master stylesheet served to screens for SalesEdge */

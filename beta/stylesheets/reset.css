@@ -1,0 +1,46 @@
+/* 
+FILENAME: reset.css
+TITLE: Reset stylesheet for all projects 
+AUTHOR: Matthew Anderson > matthew.anderson.design@gmail.com
+LAST MODIFIED DATE: 01.05.2008
+LAST MODIFIED BY: ma
+*/
+
+* { /* global nuke and reset */
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, input, select, textarea { /* header and form field text-scaling */
+	font-size: 100%;
+}
+
+ul, ol { /* apply any default list styling */
+	margin-left: 2.5em;
+	margin-bottom: 18px;
+}
+
+li, dd, blockquote { /* apply any default left padding */
+	padding-left: 1em;
+}
+
+q:before, q:after { /* allows q tag to be used semantically by removing end quotes from being automatically displayed by newer browsers */
+	content: "";
+}
+
+form label { /* maintain interactivity */
+	cursor: pointer;
+}
+
+fieldset, img { /* maintain consistency */
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th {
+	text-align: left;
+}

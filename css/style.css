@@ -1,0 +1,89 @@
+/* 
+SalesEdge master style sheet
+Author: Matthew Anderson
+Last Modified: 03.14.07
+*/
+
+/* =NEUTRALIZE */
+
+* { 
+	margin: 0;
+	padding: 0;
+	}
+
+/* =GLOBAL VARIABLES */
+
+body {
+	background: #af3324;
+	font: normal 62.5% verdana, sans-serif;
+	color: #f0ebd8;
+	}
+	
+a:link, a:visited {
+	background-color: inherit;
+	color: #000;
+	}
+	
+a:hover, a:active {
+	background-color: inherit;
+	color: #f0ebd8;
+	}
+	
+.hide {
+	display: none;
+	}
+
+/* =SECTIONS */
+
+#container {
+	width: 700px;
+	margin: 100px auto;
+	}
+	
+/* =CLASSES */
+
+.vcard {
+	margin-top: 15px;
+	padding-left: 125px;
+	font: normal 1.4em verdana, sans-serif;
+	}
+	
+.adr {
+	margin-bottom: 15px;
+}
+
+/* =HEADERS */
+
+h1,h2 {
+	font-family: palatino, serif;
+	font-weight: normal;
+	}
+	
+h1 {
+	display: block;
+	overflow: hidden;	
+	background:url(../images/salesedge_rev_rgb.gif) no-repeat;
+	margin-bottom: 25px;
+	width: 375px;
+	height: 91px;
+	font-size: 8em;
+	text-indent: -1000em;
+	color: #fff;
+	}
+	
+h2 {
+	margin-top: 25px;
+	margin-bottom: 25px; 
+	padding-left: 85px;
+	font-size: 2.5em;
+	color: #fff;
+	}
+	
+/* =ELEMENTS */
+
+p { 
+	padding-left: 125px;
+	font: normal 1.4em verdana, sans-serif; 
+	line-height: 1.5em; 
+	text-align: justify;
+	}

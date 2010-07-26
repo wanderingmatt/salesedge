@@ -1,3 +1,2 @@
-# Site Under Development
 User-agent: *
-Disallow: /
+Disallow: /beta

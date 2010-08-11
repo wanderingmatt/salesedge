@@ -176,16 +176,12 @@ hr {
 
 /* =SLIDESHOW */
 
-.clients {
-  overflow: hidden;
-}
-
 .slideshow {
-  background: #000;
-  display: block;
+  border: 1px solid #bab6a8;
+  height: 98px;
+  margin-bottom: 20px;
+  width: 298px;
 }
-
-.slideshow img { display: block; }
 
 /* =FORMS */
 

@@ -100,25 +100,31 @@ ul#menu_primary a:hover, ul#menu_primary a:active {
 #wrapper {
 	clear: both;
 	margin: 0 auto;
-	width: 966px;
+	width: 960px;
 }
 
 #content {
+  display: inline;
 	float: left;
-	width: 656px;
+	margin: 0 10px;
+	width: 620px;
 }
 
 .privacy_policy #content {
-	width: 966px;
+  margin: 0 10px;
+	width: 940px;
 }
 
 .sidebar {
-	float: right;
-	width: 287px;
+  display: inline;
+	float: left;
+	margin: 0 10px;
+	width: 300px;
 }
 
 .sidebar .interior {
 	background: #e5e0ce;
+	clear: both;
 	margin-bottom: 18px;
 	padding: 0 17px;
 	border: 1px solid #bab6a8;
@@ -151,10 +157,7 @@ h3 {
 
 /* =ELEMENTS */
 
-p, #content ul, #content ol {
-	margin-bottom: 18px;
-	font-size: 1.3em;
-}
+p, ul, ol { margin-bottom: 20px; }
 
 .sidebar img {
 	display: block;
@@ -170,6 +173,19 @@ hr {
 	border-top: 1px solid #bab6a8;
 	border-bottom: 1px solid #fff;
 }
+
+/* =SLIDESHOW */
+
+.clients {
+  overflow: hidden;
+}
+
+.slideshow {
+  background: #000;
+  display: block;
+}
+
+.slideshow img { display: block; }
 
 /* =FORMS */
 

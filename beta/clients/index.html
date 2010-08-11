@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/960.css" />
   <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css" />
   <!--[if IE]><link rel="stylesheet" type="text/css" media="screen, projection" href="../stylesheets/ie.css" /><![endif]-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../javascripts/jquery.cycle.lite.min.js"></script>
 </head>
 <body class="clients">
   <header>
@@ -74,7 +76,15 @@
       </div>
     </div>
     <div class="sidebar">
-      <img src="../images/clients.png" width="287" height="150" alt="Clients" />
+      <div class="clients">
+        <div class="slideshow">
+          <img src="http://cloud.github.com/downloads/malsup/cycle/beach1.jpg" width="200" height="200" />
+          <img src="http://cloud.github.com/downloads/malsup/cycle/beach2.jpg" width="200" height="200" />
+          <img src="http://cloud.github.com/downloads/malsup/cycle/beach3.jpg" width="200" height="200" />
+          <img src="http://cloud.github.com/downloads/malsup/cycle/beach4.jpg" width="200" height="200" />
+          <img src="http://cloud.github.com/downloads/malsup/cycle/beach5.jpg" width="200" height="200" />
+        </div>
+      </div>
       <div class="interior">
         <h2>Who are our Customers?</h2>
         <ul>
@@ -95,5 +105,14 @@
       <p>445 Apple Creek Blvd., Suite 201, Markham Ontario, Canada L3R 9X7. (647) 827-0717</p>
     </div>
   </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.slideshow').cycle({
+      fx: 'fade'
+    });
+  });
+  </script>
+
 </body>
 </html>

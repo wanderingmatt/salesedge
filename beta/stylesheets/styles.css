@@ -27,23 +27,21 @@ a:hover, a:active {
 
 /* =HEADER */
 
-#header {
+header {
 	background: #922317 url(../images/bg_header.png) repeat-x;
 	padding: 30px 0;
 	text-align: center;
 }
 
-#logo span {
-	display: block;
+header h1 { margin: 0; }
+
+header a {
 	background: url(../images/logo_salesedge_rev.png) no-repeat;
-	margin: 0 auto;
-	width: 223px;
+	display: block;
 	height: 54px;
-}
-	
-#logo img  {
-	display: none;
-	width: 0;
+	margin: 0 auto;
+	text-indent: -9999px;
+	width: 223px;
 }
 
 /* =MENU GLOBALS */

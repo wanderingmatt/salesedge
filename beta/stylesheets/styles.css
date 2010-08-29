@@ -186,6 +186,12 @@ hr {
 	border-bottom: 1px solid rgba(255, 255, 255, .6);
 }
 
+/* =BILLBOARD */
+
+#billboard {
+  margin-top: 20px;
+}
+
 /* =TESTIMONIALS */
 
 .testimonials li { margin-bottom: 20px; }

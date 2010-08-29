@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/960.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
   <!--[if lte IE7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.cycle.min.js"></script>
 </head>
 <body class="home">
   <header>
@@ -28,13 +30,66 @@
     </ul>
   </div>
   <div id="wrapper">
-    <h1>Home</h1>
-    <div id="content">
-      <div class="interior">
-        Waiting for content.
+    <div id="billboard">
+      <img src="http://placehold.it/960x400/444/fff&amp;text=(960x400)" alt="960x400" width="960" height="400" />
+    </div>
+    <div class="container_12">
+      <div class="grid_8">
+        <h2>Every day sales professionals at businesses large &amp; small depend on our services to make professional corporate introductions, shorten sales cycles, increase sales productivity and grow revenue. Results oriented, focused &amp; reliable. Since 2004.</h2>
+        <div class="grid_4 alpha">
+          <h3>About Us</h3>
+          <p>With extensive experience in sales and business relationships, professional staff employ our unique process to set viable and valuable initial sales meetings for companies in a variety of business sectors.</p>
+          <a href="about_us">Lear more about us</a>
+        </div>
+        <div class="grid_4 omega">
+          <h3>What we do</h3>
+          <ul>
+            <li>Executive Appointment Setting</li>
+            <li>Request for Information Management</li>
+            <li>Specific Prospect Development</li>
+            <li>Training / Conferences / Seminars / Events</li>
+            <li>List Development / List Cleansing</li>
+          </ul>
+          <a href="services">View our services</a>
+        </div>
+      </div>
+      <div class="grid_4">
+        <h3>Who are our customers</h3>
+        <div class="slideshow">
+          <img src="images/slideshow/bdo.jpg" width="298" height="98" />
+          <img src="images/slideshow/ca.jpg" width="298" height="98" />
+          <img src="images/slideshow/clarity-healthcare-solutions.jpg" width="298" height="98" />
+          <img src="images/slideshow/cognos.jpg" width="298" height="98" />
+          <img src="images/slideshow/dell.jpg" width="298" height="98" />
+          <img src="images/slideshow/deloitte.jpg" width="298" height="98" />
+          <img src="images/slideshow/double-click.jpg" width="298" height="98" />
+          <img src="images/slideshow/e-and-y.jpg" width="298" height="98" />
+          <img src="images/slideshow/hp.jpg" width="298" height="98" />
+          <img src="images/slideshow/microsoft.jpg" width="298" height="98" />
+          <img src="images/slideshow/monster.jpg" width="298" height="98" />
+          <img src="images/slideshow/oracle.jpg" width="298" height="98" />
+          <img src="images/slideshow/rexall.jpg" width="298" height="98" />
+          <img src="images/slideshow/sas.jpg" width="298" height="98" />
+          <img src="images/slideshow/west-monroe-partners.jpg" width="298" height="98" />
+        </div>
+        <a href="clients">Read what clients are saying</a>
       </div>
     </div>
+    <hr />
+    <div id="footer">
+      <p>Copyright © 2010 SalesEdge. All rights reserved. <a href="../legal_notice.html">Legal Notice</a>. <a href="../contact_us/">Contact Us</a>.</p>
+      <p>445 Apple Creek Blvd., Suite 201, Markham Ontario, Canada L3R 9X7. (647) 827-0717</p>
+    </div>
   </div>
+  
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.slideshow').cycle({
+      fx: 'fade',
+      random: 1
+    });
+  });
+  </script>
   
   <script type="text/javascript">
 

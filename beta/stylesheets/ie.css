@@ -1,8 +1,7 @@
 /* 
-FILENAME: IEhacks.css
-TITLE: Secondary stylesheet containing all Internet Explorer hacks for SalesEdge.ca
-LAST MODIFIED: 11.12.2007
-AUTHOR: Matthew Anderson > matthew.anderson.design@gmail.com
+FILENAME: ie.css
+DESCRIPTION: This stylesheet serves hacks for http://salesedge.ca
+AUTHOR: Matthew Anderson > http://matthew-anderson.net
 */
 
 /* Hides from IE-Mac \*/
@@ -22,7 +21,5 @@ html body {
 blockquote { /* Gives layout to IE6 and under to prevent exploding blockquotes */
 	height: 1%;
 }
-
-* { behavior: url(/css/iepngfix.htc); } /* Adds near-native PNG support with full alpha opacity to IE6 and earlier */
 
 /* End hide from IE-Mac */

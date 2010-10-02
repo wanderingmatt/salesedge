@@ -8,22 +8,18 @@ header, section, footer, aside, nav, article, figure { display: block; } /* HTML
 .hidden { display: none; }
 
 body {
-	background: #f0ebd8;
-	font: normal 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #444;
+  background: #f0ebd8;
+  font: normal 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
 }
-	
+
 a:link, a:visited {
-	background-color: inherit;
-	font-weight: bold;
-	text-decoration: underline;
-	color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
 }
-	
-a:hover, a:active {
-	background-color: inherit;
-	color: #aa312d;
-}
+
+a:hover, a:active { color: #aa312d; }
 
 /* =FLOATS */
 
@@ -41,62 +37,55 @@ footer:after {
 /* =HEADER */
 
 header {
-	background: #922317 url(../images/bg_header.png) repeat-x;
-	padding: 33px 0;
-	text-align: center;
+  background: #922317 url(../images/bg_header.png) repeat-x;
+  padding: 33px 0;
+  text-align: center;
 }
 
 header h1 { margin: 0; }
 
 header a {
-	background: url(../images/logo_salesedge_rev.png) no-repeat;
-	display: block;
-	height: 54px;
-	margin: 0 auto;
-	text-indent: -9999px;
-	width: 223px;
+  background: url(../images/logo_salesedge_rev.png) no-repeat;
+  display: block;
+  height: 54px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 223px;
 }
 
-/* =MENU GLOBALS */
+/* =NAV */
 
 #menu_bar {
-	background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;
-	font: normal 1.2em Palatino, Georgia, serif;
-	color: #000;
-	height: 54px;
+  background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;
+  font: normal 1.2em Palatino, Georgia, serif;
+  color: #000;
+  height: 54px;
 }
 
 ul#menu_primary, ul#menu_secondary {
-	clear: both;
-	margin: 0 auto;
-	width: 960px;
-	list-style: none;
+  clear: both;
+  margin: 0 auto;
+  width: 960px;
+  list-style: none;
 }
 
 ul#menu_primary li, ul#menu_secondary li {
-	float: left;
-	margin: 0;
-	padding: 0;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
-
-/* =PRIMARY MENU */
 
 ul#menu_primary a {
-	display: block;
-	padding: 0 36px 18px 0;
-	font-size: 1.2em;
-	font-weight: bold;
-	line-height: 36px;
-	text-decoration: none;
+  display: block;
+  padding: 0 36px 18px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 36px;
+  text-decoration: none;
 }
 
-ul#menu_primary a:link, ul#menu_primary a:visited {
-	color: #000;
-}
-
-ul#menu_primary a:hover, ul#menu_primary a:active {
-	color: #444;
-}
+ul#menu_primary a:link, ul#menu_primary a:visited { color: #000; }
+ul#menu_primary a:hover, ul#menu_primary a:active { color: #444; }
 
 .home ul#menu_primary #menua_home a,
 .about_us ul#menu_primary #menua_about_us a,
@@ -104,68 +93,70 @@ ul#menu_primary a:hover, ul#menu_primary a:active {
 .services ul#menu_primary #menua_services a,
 .faq ul#menu_primary #menua_faq a,
 .contact_us ul#menu_primary #menua_contact_us a {
-	background:  url(../images/bg_menu_selected.png) 25% 0 no-repeat;
-	color: #aa312d;
+  background:  url(../images/bg_menu_selected.png) 25% 0 no-repeat;
+  color: #aa312d;
 }
 
 /* =LAYOUT */
 
 #wrapper {
-	clear: both;
-	margin: 0 auto;
-	width: 960px;
+  clear: both;
+  margin: 0 auto;
+  width: 960px;
 }
 
 #content {
   display: inline;
-	float: left;
-	margin: 0 20px 0 0;
-	width: 620px;
+  float: left;
+  margin: 0 20px 0 0;
+  width: 620px;
 }
 
 .privacy_policy #content {
   margin: 0 10px;
-	width: 940px;
+  width: 940px;
 }
 
 .sidebar {
   display: inline;
-	float: left;
-	margin: 0 10px;
-	width: 300px;
+  float: left;
+  margin: 0 10px;
+  width: 300px;
 }
 
 .sidebar .interior {
-	background: #e5e0ce;
-	clear: both;
-	margin-bottom: 18px;
-	padding: 0 17px;
-	border: 1px solid #bab6a8;
+  background: #e5e0ce;
+  clear: both;
+  margin-bottom: 18px;
+  padding: 0 17px;
+  border: 1px solid #bab6a8;
 }
 
 /* =HEADLINES */
 
 h1 {
-	margin: 27px 0 9px 0;
-	font: normal 2.2em Palatino, Georgia, serif;
-	color: #aa312d;
+  color: #aa312d;
+  font: normal 30px/30px Palatino, Georgia, serif;
+  margin: 30px 0 10px 0;
 }
 
 h2 {
-	margin: 27px 0 9px 0;
-	font: normal 1.6em Palatino, Georgia, serif;
-	color: #000;
+  color: #000;
+  font: normal 20px/20px Palatino, Georgia, serif;
+  margin: 30px 0 10px 0;
 }
 
 h3 {
-	font-size: 1.3em;
-	line-height: 18px;
+  color: rgba(0, 0, 0, .4);
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .intro {
-	margin: 18px 0;
-	font: normal 1.4em Palatino, Georgia, serif;
-	color: #000;
+  margin: 18px 0;
+  font: normal 1.4em Palatino, Georgia, serif;
+  color: #000;
 }
 
 /* =ELEMENTS */
@@ -173,25 +164,60 @@ h3 {
 p, ul, ol { margin-bottom: 20px; }
 
 .sidebar img {
-	display: block;
-	margin-bottom: 18px;
+  display: block;
+  margin-bottom: 18px;
 }
 
 hr {
-	clear: both;
-	display: block;
-	margin: 20px 0;
-	border: 0;
-	border-top: 1px solid rgba(0, 0, 0, .15);
-	border-bottom: 1px solid rgba(255, 255, 255, .6);
+  clear: both;
+  display: block;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .15);
+  border-bottom: 1px solid rgba(255, 255, 255, .6);
 }
 
-/* =BILLBOARD */
+/* =HOME */
 
 #billboard {
-  margin-top: 20px;
+  background: url("../images/billboard.jpg") no-repeat;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+  height: 400px;
+  text-shadow: 0 1px #fff;
+  width: 960px;
 }
 
+#billboard h1, #billboard h2 { padding: 0 40px; }
+
+#billboard h1 {
+  font-size: 45px;
+  padding-top: 110px;
+}
+
+#billboard h2 {
+  color: rgba(0, 0, 0, .6);
+  font-size: 30px;
+  margin: 0 0 90px 0;
+}
+
+#billboard a {
+  background-color: #922317;
+  border: 4px double rgba(255, 255, 255, .2);
+  border-left: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 10px 20px 10px 40px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.home h2 {
+  color: rgba(0, 0, 0, .6);
+  line-height: 30px;
+}
+
+.home h3 { margin-top: 30px; }
 /* =TESTIMONIALS */
 
 .testimonials li { margin-bottom: 20px; }
@@ -216,67 +242,67 @@ cite {
 /* =FORMS */
 
 legend { /* Replicated H2 styling */
-	margin: 27px 0 9px 0;
-	font: normal 1.6em Palatino, Georgia, serif;
-	color: #000;	
-	}
+  margin: 27px 0 9px 0;
+  font: normal 1.6em Palatino, Georgia, serif;
+  color: #000;	
+}
 
 legend span { /* Corrects legend from running outside the lines */
-	display: block;
-	width: 602px;
+  display: block;
+  width: 602px;
 }
 
 form ol, form ul {
-	list-style: none;
-	margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 form li {
-	clear: both;
-	margin-bottom: 16px;
-	padding: 0;
+  clear: both;
+  margin-bottom: 16px;
+  padding: 0;
 }
 
 label {
-	display: block;
-	float: left;
-	line-height: 18px;
-	margin-right: 18px;
-	text-align: right;
-	width: 105px;
+  display: block;
+  float: left;
+  line-height: 18px;
+  margin-right: 18px;
+  text-align: right;
+  width: 105px;
 }
 
 label:after {
-	content: ':';
+  content: ':';
 }
 
 li input, textarea, select {
-	background: #fff;
-	width: 249px;
-	padding: 1px;
-	font: normal 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	border: 1px solid #bab6a8;
+  background: #fff;
+  width: 249px;
+  padding: 1px;
+  font: normal 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px solid #bab6a8;
 }
 
 select {
-	background: #fff;
-	width: 253px; /* input width + input padding + 2px */
+  background: #fff;
+  width: 253px; /* input width + input padding + 2px */
 }
 
 input:focus, textarea:focus, select:focus {
-	background: #e5e0ce;
+  background: #e5e0ce;
 }
 
 input.submit {
-	margin-left: 123px;
-	padding: 9px;
+  margin-left: 123px;
+  padding: 9px;
 
 }
 
 /* =FOOTER */
 
 #footer p {
-	line-height: 0;
-	font-size: 1.1em;
-	text-align: center;
+  line-height: 0;
+  font-size: 1.1em;
+  text-align: center;
 }

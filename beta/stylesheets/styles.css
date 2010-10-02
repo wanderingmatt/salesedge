@@ -55,27 +55,28 @@ header a {
 
 /* =NAV */
 
-#menu_bar {
+nav {
   background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;
-  font: normal 1.2em Palatino, Georgia, serif;
+  font: normal 1.2em Cambria, Georgia, serif;
   color: #000;
   height: 54px;
 }
 
-ul#menu_primary, ul#menu_secondary {
+nav ul {
   clear: both;
   margin: 0 auto;
   width: 960px;
   list-style: none;
 }
 
-ul#menu_primary li, ul#menu_secondary li {
+nav ul li {
   float: left;
   margin: 0;
   padding: 0;
 }
 
-ul#menu_primary a {
+nav a {
+  color: #000;
   display: block;
   padding: 0 36px 18px 0;
   font-size: 1.2em;
@@ -84,15 +85,14 @@ ul#menu_primary a {
   text-decoration: none;
 }
 
-ul#menu_primary a:link, ul#menu_primary a:visited { color: #000; }
-ul#menu_primary a:hover, ul#menu_primary a:active { color: #444; }
+nav a:hover { color: #444; }
 
-.home ul#menu_primary #menua_home a,
-.about_us ul#menu_primary #menua_about_us a,
-.clients ul#menu_primary #menua_clients a,
-.services ul#menu_primary #menua_services a,
-.faq ul#menu_primary #menua_faq a,
-.contact_us ul#menu_primary #menua_contact_us a {
+.home nav ul #menua_home a,
+.about_us nav ul #menua_about_us a,
+.clients nav ul #menua_clients a,
+.services nav ul #menua_services a,
+.faq nav ul #menua_faq a,
+.contact_us nav ul #menua_contact_us a {
   background:  url(../images/bg_menu_selected.png) 25% 0 no-repeat;
   color: #aa312d;
 }

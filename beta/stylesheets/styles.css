@@ -24,7 +24,7 @@ a:hover, a:active { color: #aa312d; }
 
 /* =FLOATS */
 
-#footer .inner:after {
+nav:after {
   clear: both;
   content: ' ';
   display: block;
@@ -39,8 +39,8 @@ a:hover, a:active { color: #aa312d; }
 
 header {
   background: #af3325 url(../images/bg_header.png) repeat-x;
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
-  padding: 33px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .05);
+  padding: 33px 0 32px 0;
   text-align: center;
 }
 
@@ -58,12 +58,13 @@ header a {
 /* =NAV */
 
 nav {
-  background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;
-/*  background: #691f16;*/
-  font: normal 14px/20px Palatino, Georgia, serif;
-  color: #000;
-  height: 54px;
+/*  background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;*/
+  background: #772319;
+  border-bottom: 1px solid #5b1a13;
+/*  color: #000;*/
 }
+
+nav ul { margin: 0; }
 
 nav ul li {
   float: left;
@@ -72,11 +73,10 @@ nav ul li {
 }
 
 nav a:link, nav a:visited {
-  color: #000;
+/*  color: #000;*/
   display: block;
-  padding: 0 36px 18px 0;
+  padding: 10px;
   font-weight: bold;
-  line-height: 36px;
   text-decoration: none;
 }
 

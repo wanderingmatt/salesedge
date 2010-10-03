@@ -57,7 +57,7 @@ header a {
 
 nav {
   background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;
-  font: normal 1.2em Palatino, Georgia, serif;
+  font: normal 14px/20px Palatino, Georgia, serif;
   color: #000;
   height: 54px;
 }
@@ -75,11 +75,10 @@ nav ul li {
   padding: 0;
 }
 
-nav a {
+nav a:link, nav a:visited {
   color: #000;
   display: block;
   padding: 0 36px 18px 0;
-  font-size: 1.2em;
   font-weight: bold;
   line-height: 36px;
   text-decoration: none;
@@ -153,12 +152,6 @@ h3 {
   line-height: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
-}
-
-.intro {
-  margin: 18px 0;
-  font: normal 1.4em Palatino, Georgia, serif;
-  color: #000;
 }
 
 /* =ELEMENTS */
@@ -241,8 +234,8 @@ hr {
 #billboard h1, #billboard h2, #billboard .buttons { margin: 0 40px; }
 
 #billboard h1 {
-  font-size: 45px;
-  padding-top: 70px;
+  font-size: 40px;
+  padding-top: 120px;
 }
 
 #billboard h2 {
@@ -253,7 +246,7 @@ hr {
   padding-bottom: 0;
 }
 
-#billboard .buttons { margin-top: 120px; }
+#billboard .buttons { margin-top: 100px; }
 
 #billboard .button {
   background-color: rgb(176, 176, 176);

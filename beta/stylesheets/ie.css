@@ -6,20 +6,9 @@ AUTHOR: Matthew Anderson > http://matthew-anderson.net
 
 /* Hides from IE-Mac \*/
 
-html body {
-	font-size: 10px;
-}
-
-* html, ul.sections_list li, ul.selections_list li { /* Gives layout to IE6 and under for self-clearing floats */
-	height: 1%;
-}
-
-*:first-child+html, ul.sections_list li, ul.selections_list li { /* IE7 still can't handle self-clearing floats properly */
-	min-height: 1px;
-}
-
-blockquote { /* Gives layout to IE6 and under to prevent exploding blockquotes */
-	height: 1%;
+#billboard .button {
+  background-color: rgb(179, 179, 179);
+  border-color: rgb(162, 162, 162);
 }
 
 /* End hide from IE-Mac */

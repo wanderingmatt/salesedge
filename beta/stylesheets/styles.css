@@ -147,6 +147,7 @@ h2 {
 }
 
 h3 {
+  color: rgb(155, 152, 139);
   color: rgba(0, 0, 0, .4);
   font-weight: normal;
   line-height: 30px;
@@ -186,8 +187,11 @@ hr {
 /* =BUTTONS */
 
 .buttons .button {
+  background-color: rgb(192, 188, 172);
   background-color: rgba(0, 0, 0, .2);
+  border: 3px double rgb(173, 169, 155);
   border: 3px double rgba(0, 0, 0, .1);
+  color: rgb(137, 136, 132);
   color: rgba(0, 0, 0, .4);
   display: inline-block;
   font-size: 10px;
@@ -198,11 +202,21 @@ hr {
   text-transform: uppercase;
 }
 
-.buttons a.button:hover { background-color: rgba(0, 0, 0, .1); }
+.buttons a.button:hover {
+  background-color: rgb(216, 211, 194);
+  background-color: rgba(0, 0, 0, .1);
+  border: 3px double rgb(194, 190, 174);
+  border: 3px double rgba(0, 0, 0, .1);
+  color: rgb(143, 142, 138);
+  color: rgba(0, 0, 0, .4);
+}
 
 .buttons a.button:active {
+  background-color: rgb(192, 188, 172);
   background-color: rgba(0, 0, 0, .2);
   border-color: transparent;
+  color: rgb(137, 136, 132);
+  color: rgba(0, 0, 0, .4);
 }
 
 /* =HOME */
@@ -242,11 +256,16 @@ hr {
 #billboard .buttons { margin-top: 120px; }
 
 #billboard .button {
+  background-color: rgb(176, 176, 176);
+  background-color: rgba(0, 0, 0, .2);
+  border-color: rgb(160, 160, 160);
+  border-color: rgba(0, 0, 0, .1);
   font-size: 13px;
   font-weight: bold;
 }
 
 .home h2 {
+  border-bottom: 3px double rgb(216, 211, 194);
   border-bottom: 3px double rgba(0, 0, 0, .1);
   color: rgba(0, 0, 0, .6);
   line-height: 30px;

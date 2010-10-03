@@ -8,9 +8,10 @@ header, section, footer, aside, nav, article, figure { display: block; } /* HTML
 .hidden { display: none; }
 
 body {
-  background: #f0ebd8;
+  background: #f0ebd8 url(../images/bg.jpg);
   font: normal 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #444;
+  text-shadow: 0 1px rgba(255, 255, 255, .6);
 }
 
 a:link, a:visited {
@@ -166,15 +167,6 @@ p, ul, ol { margin-bottom: 20px; }
 .sidebar img {
   display: block;
   margin-bottom: 18px;
-}
-
-hr {
-  clear: both;
-  display: block;
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, .15);
-  border-bottom: 1px solid rgba(255, 255, 255, .6);
 }
 
 /* =BUTTONS */

@@ -6,9 +6,6 @@ AUTHOR: Matthew Anderson > http://matthew-anderson.net
 
 /* Hides from IE-Mac \*/
 
-#billboard .button {
-  background-color: rgb(179, 179, 179);
-  border-color: rgb(162, 162, 162);
-}
+#billboard .button { display: inline; } /* Faux inline-block */
 
 /* End hide from IE-Mac */

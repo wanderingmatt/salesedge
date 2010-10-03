@@ -82,14 +82,8 @@ nav a:link, nav a:visited {
 
 nav a:hover { color: #444; }
 
-.home nav ul #menua_home a,
-.about_us nav ul #menua_about_us a,
-.clients nav ul #menua_clients a,
-.services nav ul #menua_services a,
-.faq nav ul #menua_faq a,
-.contact_us nav ul #menua_contact_us a {
-  background:  url(../images/bg_menu_selected.png) 25% 0 no-repeat;
-  color: #aa312d;
+.home #home a, .about #about a, .clients #clients a, .services #services a, .faq #faq a, .contact_us #contacts a {
+  color: #fff;
 }
 
 /* =ASIDE */
@@ -150,7 +144,7 @@ footer a:link, footer a:visited {
   color: rgba(0, 0, 0, .6);
 }
 
-/* =HEADLINES */
+/* =HEADINGS */
 
 h1 {
   color: #af3219;

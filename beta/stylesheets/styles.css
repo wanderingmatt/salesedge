@@ -38,7 +38,8 @@ a:hover, a:active { color: #aa312d; }
 /* =HEADER */
 
 header {
-  background: #922317 url(../images/bg_header.png) repeat-x;
+  background: #af3325 url(../images/bg_header.png) repeat-x;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
   padding: 33px 0;
   text-align: center;
 }
@@ -58,16 +59,10 @@ header a {
 
 nav {
   background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;
+/*  background: #691f16;*/
   font: normal 14px/20px Palatino, Georgia, serif;
   color: #000;
   height: 54px;
-}
-
-nav ul {
-  clear: both;
-  margin: 0 auto;
-  width: 960px;
-  list-style: none;
 }
 
 nav ul li {
@@ -97,35 +92,37 @@ nav a:hover { color: #444; }
   color: #aa312d;
 }
 
-/* =LAYOUT */
+/* =ASIDE */
 
-#wrapper {
-  clear: both;
-  margin: 0 auto;
-  width: 960px;
+aside {
+  color: rgba(0, 0, 0, .5);
+  margin-top: 10px;
 }
 
-#content {
-  display: inline;
-  float: left;
-  margin: 0 20px 0 0;
-  width: 620px;
+aside h2, aside .inner { border: 3px double rgba(0, 0, 0, .05); }
+
+aside h2 {
+  background: rgba(0, 0, 0, .1);
+  margin: 0;
+  padding: 17px;
 }
 
-.sidebar {
-  display: inline;
-  float: left;
-  margin: 0 10px;
-  width: 300px;
+aside .inner {
+  background: rgba(0, 0, 0, .05);
+  border-top: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
-.sidebar .interior {
-  background: #e5e0ce;
-  clear: both;
-  margin-bottom: 18px;
-  padding: 0 17px;
-  border: 1px solid #bab6a8;
+aside h3 {
+  color: rgba(0, 0, 0, .8);
+  line-height: 19px;
+  margin: 0;
+  padding: 10px 17px 0;
+  text-transform: none;
 }
+
+aside p { padding: 0 17px; }
 
 /* =FOOTER */
 
@@ -156,7 +153,7 @@ footer a:link, footer a:visited {
 /* =HEADLINES */
 
 h1 {
-  color: #aa312d;
+  color: #af3219;
   font: normal 30px/30px Palatino, Georgia, serif;
   margin: 30px 0 10px 0;
 }

@@ -78,7 +78,7 @@ nav a:link, nav a:visited {
   color: rgba(255, 255, 255, .6);
   font-weight: normal;
   line-height: 20px;
-  padding: 0 20px;
+  padding: 9px 20px;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, .3);
 }
@@ -88,7 +88,6 @@ nav a:hover { color: #fff; }
 .home #home a, .about #about a, .clients #clients a, .services #services a, .faq #faq a, .contact_us #contacts a {
   color: #fff;
   font-weight: bold;
-  padding: 9px 20px;
   text-shadow: 0 1px rgba(0, 0, 0, .6);
 }
 

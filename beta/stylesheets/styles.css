@@ -58,7 +58,6 @@ header a {
 /* =NAV */
 
 nav {
-/*  background: #fdf8ed url(../images/bg_menu_bar.png) repeat-x;*/
   background: #772319;
   border-top: 1px solid #5b1a13;
   border-bottom: 1px solid #5b1a13;
@@ -288,14 +287,39 @@ p, ul, ol { margin-bottom: 20px; }
 
 /* =TESTIMONIALS */
 
-.testimonials li { margin-bottom: 20px; }
-q { font: normal 15px Palatino, Georgia, serif; }
+.testimonials li {
+  display: table;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.testimonials .alpha { clear: both; }
+
+.testimonials blockquote {
+  border: 3px double rgba(0, 0, 0, .1);
+  display: table-cell;
+  height: 120px;
+  vertical-align: middle;
+}
+
+.testimonials .tall { height: 160px; }
+
+q {
+  display: block;
+  font: normal 15px Palatino, Georgia, serif;
+  padding: 0 17px;
+}
 
 cite {
+  background: rgba(0, 0, 0, .05);
+  bottom: 3px;
   color: rgba(0, 0, 0, .4);
   display: block;
   font-style: normal;
-  padding-left: 15px;
+  left: 3px;
+  padding: 2px 17px;
+  position: absolute;
+  width: 260px;
 }
 
 /* =SLIDESHOW */

@@ -198,7 +198,7 @@ p, ul, ol { margin-bottom: 20px; }
 
 .buttons .button {
   background-color: rgb(192, 188, 172);
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .1);
   border: 3px double rgb(173, 169, 155);
   border: 3px double rgba(0, 0, 0, .1);
   color: rgb(137, 136, 132);
@@ -214,7 +214,7 @@ p, ul, ol { margin-bottom: 20px; }
 
 .buttons a.button:hover {
   background-color: rgb(216, 211, 194);
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .05);
   border: 3px double rgb(194, 190, 174);
   border: 3px double rgba(0, 0, 0, .1);
   color: rgb(143, 142, 138);
@@ -226,7 +226,7 @@ p, ul, ol { margin-bottom: 20px; }
   background-color: rgba(0, 0, 0, .2);
   border-color: transparent;
   color: rgb(137, 136, 132);
-  color: rgba(0, 0, 0, .4);
+  color: rgba(0, 0, 0, .6);
 }
 
 /* =HOME */

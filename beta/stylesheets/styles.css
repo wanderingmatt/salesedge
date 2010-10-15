@@ -332,6 +332,8 @@ cite {
 
 /* =FORMS */
 
+.contact_us h1 { display: none; }
+
 legend { /* Replicated H2 styling */
   margin: 27px 0 9px 0;
   font: normal 1.6em Palatino, Georgia, serif;

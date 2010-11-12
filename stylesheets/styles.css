@@ -332,7 +332,7 @@ cite {
 
 /* =FORMS */
 
-.contact_us h1 { display: none; }
+.contact_us #wrapper h1 { display: none; }
 
 legend { /* Replicated H2 styling */
   margin: 27px 0 9px 0;

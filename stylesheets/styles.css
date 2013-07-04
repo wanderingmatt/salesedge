@@ -330,6 +330,10 @@ cite {
   width: 298px;
 }
 
+/* =CONTACT US */
+
+.vcard .inner { padding: 10px; }
+
 /* =FORMS */
 
 .contact_us #wrapper h1 { display: none; }
@@ -337,7 +341,7 @@ cite {
 legend { /* Replicated H2 styling */
   margin: 27px 0 9px 0;
   font: normal 1.6em Palatino, Georgia, serif;
-  color: #000;	
+  color: #000;
 }
 
 legend span { /* Corrects legend from running outside the lines */

@@ -1,53 +1,46 @@
 header {
-  background: #af3325;
-  border-bottom: 1px solid rgba(255, 255, 255, .075);
-  padding: 33px 0 32px 0;
-  text-align: center;
+  background: $red;
+  padding: 30px 10px;
 }
 
-header h1 { margin: 0; }
-
-header a {
+.logo {
   background: url('../images/logo_salesedge_rev.png') no-repeat;
   display: block;
   height: 54px;
-  margin: 0 auto;
   text-indent: -9999px;
   width: 223px;
 }
 
-/* =NAV */
-
 nav {
-  background: #772319;
-  border-top: 1px solid #5b1a13;
-  border-bottom: 1px solid #5b1a13;
-  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, .15);
-  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  ul {
+    background: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: block;
+    color: #fff;
+    opacity: .6;
+    padding: 10px 20px;
+    text-decoration: none;
+    &:hover { opacity: .8; }
+    &:active {
+      opacity: 1;
+      position: relative;
+      top: 1px;
+    }
+  }
 }
 
-nav ul { margin: 0; }
+$pages: home, services, clients, faq, about, contact;
 
-nav ul li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-nav a:link, nav a:visited {
-  display: block;
-  color: rgba(255, 255, 255, .6);
-  font-weight: normal;
-  line-height: 20px;
-  padding: 9px 20px;
-  text-decoration: none;
-  text-shadow: 0 -1px rgba(0, 0, 0, .3);
-}
-
-nav a:hover { color: #fff; }
-
-.home #home a, .about #about a, .clients #clients a, .services #services a, .faq #faq a, .contact_us #contacts a {
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 0 1px rgba(0, 0, 0, .6);
+@each $page in $pages {
+  .#{$page} ##{$page} a {
+    font-weight: bold;
+    opacity: 1;
+  }
 }

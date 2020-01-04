@@ -12,7 +12,7 @@ const gulp         = require('gulp'),
 
 var paths = {
   html: {
-    src: ['./src/**/*.html', '!src/partials/*'],
+    src: './src/**/*.html',
     index: './src/index.html',
     pages: ['./src/**/*.html', '!src/index.html', '!src/partials/*'],
     partials: './src/partials/',

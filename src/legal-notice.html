@@ -1,32 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Legal Notice &bull; SalesEdge</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Professional corporate introductions, shorten sales cycles, increase sales productivity and grow revenue. Results oriented, focused &amp; reliable. Since 2004." />
-  <meta name="author" content="Matthew Anderson" />
-  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/960.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <partial src="_meta.html" title="Legal Notice"></partial>
 </head>
 <body class="privacy_policy">
-  <header>
-    <h1><a href="/">SalesEdge</a></h1>
-  </header>
-  <nav>
-    <ul>
-      <li id="home"><a href="/">Home</a></li>
-      <li id="about"><a href="/about">About Us</a></li>
-      <li id="clients"><a href="/clients">Clients</a></li>
-      <li id="services"><a href="/services">Services</a></li>
-      <li id="faq"><a href="/faq">FAQ</a></li>
-      <li id="contacts"><a href="/contact">Contact Us</a></li>
-    </ul>
-  </nav>
-  <div id="wrapper" class="container_12">
+  <partial src="_header.html"></partial>
+  <div class="wrapper">
     <h1 class="grid_12">Legal Notice</h1>
     <section class="grid_12">
       <h2>This is the web site of SalesEdge Corporation</h2>
@@ -38,23 +17,7 @@
       <p>The SalesEdge logo is a registered mark and trade name of SalesEdge Corporation. Other product and company names mentioned herein are the marks of their respective owners.</p>
     </section>
   </div>
-  <footer>
-    <p>Copyright &copy; 2013 SalesEdge. All rights reserved. <a href="/legal-notice">Legal Notice</a>. <a href="/contact">Contact Us</a>.</p>
-    <p>31056-8889 Yonge St, Richmond Hill, Ontario, Canada L4C 7Z0. (647) 827-0717</p>
-  </footer>
-
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-17891104-2']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
+  <partial src="_footer.html"></partial>
+  <script src="/javascripts/scripts.js"></script>
 </body>
 </html>

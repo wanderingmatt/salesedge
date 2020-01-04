@@ -16,7 +16,6 @@ var paths = {
     index: './src/index.html',
     pages: ['./src/**/*.html', '!src/index.html', '!src/partials/*'],
     partials: './src/partials/',
-    // excludePartials: '!src/partials/*',
     dest: './dist'
   },
   images: {
@@ -54,25 +53,24 @@ function watch(done) {
 };
 
 function html() {
-  var src = gulp
-    .src(paths.html.src)
+  var indexStream = gulp
+    .src(paths.html.index)
     .pipe(partials({
       basePath: paths.html.partials
     }))
-  ;
-
-  var index = gulp
-    .src(paths.html.index)
     .pipe(gulp.dest(paths.html.dest))
   ;
 
-  var pages = gulp
+  var pagesStream = gulp
     .src(paths.html.pages)
-    .pipe(permalinks(':stem/index.html'))
+    .pipe(partials({
+      basePath: paths.html.partials
+    }))
+    .pipe(permalinks(':name/index.html'))
     .pipe(gulp.dest(paths.html.dest))
   ;
 
-  var mergedStream = merge(src, index, pages)
+  var mergedStream = merge(indexStream, pagesStream)
     .pipe(connect.reload())
   ;
 

@@ -306,7 +306,56 @@ template {
 
 /* @import 'framework/*'; */
 /* @import 'vendor/*'; */
-/* @import 'regions/*'; */
+header {
+  background: #af3325;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+  padding: 33px 0 32px 0;
+  text-align: center; }
+
+header h1 {
+  margin: 0; }
+
+header a {
+  background: url("../images/logo_salesedge_rev.png") no-repeat;
+  display: block;
+  height: 54px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 223px; }
+
+/* =NAV */
+nav {
+  background: #772319;
+  border-top: 1px solid #5b1a13;
+  border-bottom: 1px solid #5b1a13;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.15);
+  text-align: center; }
+
+nav ul {
+  margin: 0; }
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+nav a:link, nav a:visited {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  line-height: 20px;
+  padding: 9px 20px;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
+
+nav a:hover {
+  color: #fff; }
+
+.home #home a, .about #about a, .clients #clients a, .services #services a, .faq #faq a, .contact_us #contacts a {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.6); }
+
 /* 
 FILENAME: forms.css
 TITLE: Forms stylesheet called for registration, contact and directions on LikewiseSoftware.com
@@ -434,82 +483,6 @@ input#state, input#zip {
   margin-top: 18px;
   margin-bottom: 0;
   padding-left: 18px; }
-
-body {
-  background: #f0ebd8 url("../images/bg.jpg");
-  font: normal 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #444;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.6); }
-
-a:link, a:visited {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #000; }
-
-a:hover, a:active {
-  color: #aa312d; }
-
-/* =FLOATS */
-nav:after, #wrapper:after {
-  clear: both;
-  content: ' ';
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-  width: 0; }
-
-/* =HEADER */
-header {
-  background: #af3325 url("../images/bg_header.png") repeat-x;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
-  padding: 33px 0 32px 0;
-  text-align: center; }
-
-header h1 {
-  margin: 0; }
-
-header a {
-  background: url("../images/logo_salesedge_rev.png") no-repeat;
-  display: block;
-  height: 54px;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 223px; }
-
-/* =NAV */
-nav {
-  background: #772319;
-  border-top: 1px solid #5b1a13;
-  border-bottom: 1px solid #5b1a13;
-  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.15);
-  text-align: center; }
-
-nav ul {
-  margin: 0; }
-
-nav ul li {
-  display: inline-block;
-  margin: 0;
-  padding: 0; }
-
-nav a:link, nav a:visited {
-  display: block;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: normal;
-  line-height: 20px;
-  padding: 9px 20px;
-  text-decoration: none;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
-
-nav a:hover {
-  color: #fff; }
-
-.home #home a, .about #about a, .clients #clients a, .services #services a, .faq #faq a, .contact_us #contacts a {
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.6); }
 
 /* =WRAPPER */
 #wrapper {

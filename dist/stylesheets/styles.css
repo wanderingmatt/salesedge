@@ -305,7 +305,7 @@ template {
   display: none; }
 
 body {
-  background: #f0ebd8 url(../images/bg.jpg);
+  background: #f0ebd8 url("../images/bg.jpg");
   font: normal 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #444;
   text-shadow: 0 1px rgba(255, 255, 255, 0.6); }
@@ -331,7 +331,7 @@ nav:after, #wrapper:after {
 
 /* =HEADER */
 header {
-  background: #af3325 url(../images/bg_header.png) repeat-x;
+  background: #af3325 url("../images/bg_header.png") repeat-x;
   border-bottom: 1px solid rgba(255, 255, 255, 0.075);
   padding: 33px 0 32px 0;
   text-align: center; }
@@ -340,7 +340,7 @@ header h1 {
   margin: 0; }
 
 header a {
-  background: url(../images/logo_salesedge_rev.png) no-repeat;
+  background: url("../images/logo_salesedge_rev.png") no-repeat;
   display: block;
   height: 54px;
   margin: 0 auto;

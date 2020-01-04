@@ -1,0 +1,23 @@
+$default-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+// MODULAR SCALE
+// 14px 16px 20px 23px 28px 32px 40px 45px 56px 64px 79px
+
+$ms-base: 14px 16px;
+$ms-ratio: $augmented-fourth;
+
+// @debug ms-list(0, 10, $ms-base, $ms-ratio);
+
+html {
+  font-size: ms(1);
+  line-height: 1.5;
+}
+
+body {
+  font-family: $default-font-family;
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2 { font-family: Palatino, Georgia, serif; }
+h1 { color: $red; }

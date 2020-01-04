@@ -1,0 +1,31 @@
+aside {
+  color: rgba(0, 0, 0, .5);
+  margin-top: 10px;
+}
+
+aside h2, aside .inner { border: 3px double rgba(0, 0, 0, .05); }
+
+aside h2 {
+  background: rgba(0, 0, 0, .1);
+  margin: 0;
+  padding: 17px 12px;
+}
+
+aside .inner {
+  background: rgba(0, 0, 0, .05);
+  border-top: 0;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+aside h3 {
+  color: #444;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 12px 0;
+  text-transform: none;
+}
+
+aside p { font-size: 12px; }
+aside p, aside ul { padding: 0 12px; }

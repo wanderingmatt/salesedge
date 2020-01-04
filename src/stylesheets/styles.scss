@@ -1,11 +1,4 @@
-/*
-FILENAME: styles.css
-DESCRIPTION: This stylesheet serves global declarations for http://salesedge.ca
-AUTHOR: Matthew Anderson > http://matthew-anderson.net
-*/
-
-header, section, footer, aside, nav, article, figure { display: block; } /* HTML5 */
-.hidden { display: none; }
+@import 'node_modules/normalize.css/normalize';
 
 body {
   background: #f0ebd8 url(../images/bg.jpg);

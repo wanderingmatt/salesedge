@@ -5,14 +5,18 @@ const gulp         = require('gulp'),
       connect      = require('gulp-connect'),
       del          = require('del'),
       glob         = require('gulp-sass-glob'),
+      merge        = require('merge-stream'),
       partials     = require('gulp-html-partial');
+      permalinks   = require('gulp-permalinks');
       sass         = require('gulp-sass');
 
 var paths = {
   html: {
-    src: './src/**/*.html',
+    src: ['./src/**/*.html', '!src/partials/*'],
+    index: './src/index.html',
+    pages: ['./src/**/*.html', '!src/index.html', '!src/partials/*'],
     partials: './src/partials/',
-    excludePartials: '!src/partials/*',
+    // excludePartials: '!src/partials/*',
     dest: './dist'
   },
   images: {
@@ -50,13 +54,29 @@ function watch(done) {
 };
 
 function html() {
-  return gulp
-    .src([paths.html.src, paths.html.excludePartials])
+  var src = gulp
+    .src(paths.html.src)
     .pipe(partials({
       basePath: paths.html.partials
     }))
+  ;
+
+  var index = gulp
+    .src(paths.html.index)
     .pipe(gulp.dest(paths.html.dest))
+  ;
+
+  var pages = gulp
+    .src(paths.html.pages)
+    .pipe(permalinks(':stem/index.html'))
+    .pipe(gulp.dest(paths.html.dest))
+  ;
+
+  var mergedStream = merge(src, index, pages)
     .pipe(connect.reload())
+  ;
+
+  return mergedStream;
 };
 
 function images() {

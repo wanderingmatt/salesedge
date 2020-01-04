@@ -24,8 +24,10 @@
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
     "gulp-html-partial": "^1.0.1",
+    "gulp-permalinks": "^0.1.1",
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.1.0",
+    "merge-stream": "^2.0.0",
     "normalize.css": "^8.0.1"
   }
 }

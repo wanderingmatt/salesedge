@@ -107,6 +107,6 @@ const build = gulp.series(clean, gulp.parallel(html, images, stylesheets, javasc
 
 exports.build = build;
 exports.clean = clean;
-exports.serve = serve
+exports.serve = serve;
 
 exports.default = gulp.series(build, serve, watch);

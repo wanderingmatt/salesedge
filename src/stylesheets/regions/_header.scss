@@ -1,37 +1,52 @@
 header {
   background: $red;
-  padding: 30px 10px;
-}
-
-.logo {
-  background: url('../images/logo_salesedge_rev.png') no-repeat;
-  display: block;
-  height: 54px;
-  text-indent: -9999px;
-  width: 223px;
-}
-
-nav {
-  position: absolute;
-  right: 0;
-  top: 0;
-  ul {
-    background: black;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  a {
+  padding: 20px;
+  .logo {
+    background: url('../images/logo_salesedge_rev.png') no-repeat;
     display: block;
-    color: #fff;
-    opacity: .6;
-    padding: 10px 20px;
-    text-decoration: none;
-    &:hover { opacity: .8; }
-    &:active {
-      opacity: 1;
-      position: relative;
-      top: 1px;
+    height: 54px;
+    text-indent: -9999px;
+    width: 223px;
+  }
+  nav {
+    display: none;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      display: block;
+      color: #fff;
+      opacity: .6;
+      padding: 10px 20px;
+      text-decoration: none;
+      &:hover { opacity: .8; }
+      &:active {
+        opacity: 1;
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+  @include breakpoint($mobile-only) {
+    nav {
+      background: black;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  @include breakpoint($tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    nav {
+      align-items: center;
+      display: flex;
+      li {
+        display: inline-block;
+      }
     }
   }
 }

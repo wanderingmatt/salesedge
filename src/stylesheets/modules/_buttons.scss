@@ -1,0 +1,22 @@
+.button {
+  background-color: rgba(0, 0, 0, .1);
+  border: 4px double rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .4);
+  display: inline-block;
+  font-size: ms(0);
+  font-weight: bold;
+  line-height: 1;
+  padding: 10px 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .6);
+  }
+  &:active {
+    border: 0;
+    padding: 14px 16px;
+    position: relative;
+    top: 1px;
+  }
+}
